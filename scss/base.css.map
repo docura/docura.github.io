@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "base.css",
+	"sourceRoot": "/home/runner/work/site/site",
+	"sources": [
+		"stdin"
+	],
+	"sourcesContent": [
+		"/* normalize */\n/* --------- */\n*, *::before, *::after {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n}"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,CAAC,CAAE,CAAC,EAAE,MAAM,CAAE,CAAC,EAAE,KAAK,AAAC,CACrB,UAAU,CAAE,UAAU,CACvB,AAED,AAAA,IAAI,AAAC,CACH,MAAM,CAAE,CAAC,CACV"
+}
