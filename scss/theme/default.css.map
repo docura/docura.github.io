@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "default.css",
+	"sourceRoot": "/home/runner/work/site/site",
+	"sources": [
+		"stdin"
+	],
+	"sourcesContent": [
+		"@font-face {\n  font-family: 'Inter';\n  font-style: normal;\n  font-weight: 300;\n  font-display: swap;\n  src: url(\"/font/Inter-Light.woff2?v=3.19\") format(\"woff2\"),\n  url(\"/font/Inter-Light.woff?v=3.19\") format(\"woff\");\n}\n\n@font-face {\n  font-family: 'Inter';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"/font/Inter-Regular.woff2?v=3.19\") format(\"woff2\"),\n  url(\"/font/Inter-Regular.woff?v=3.19\") format(\"woff\");\n}\n\n@font-face {\n  font-family: 'Inter';\n  font-style: italic;\n  font-weight: 400;\n  font-display: swap;\n  src: url(\"/font/Inter-Italic.woff2?v=3.19\") format(\"woff2\"),\n  url(\"/font/Inter-Italic.woff?v=3.19\") format(\"woff\");\n}\n\n@font-face {\n  font-family: 'Inter';\n  font-style:  normal;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"/font/Inter-SemiBold.woff2?v=3.19\") format(\"woff2\"),\n  url(\"/font/Inter-SemiBold.woff?v=3.19\") format(\"woff\");\n}\n\n@font-face {\n  font-family: 'Inter';\n  font-style:  italic;\n  font-weight: 600;\n  font-display: swap;\n  src: url(\"/font/Inter-SemiBoldItalic.woff2?v=3.19\") format(\"woff2\"),\n  url(\"/font/Inter-SemiBoldItalic.woff?v=3.19\") format(\"woff\");\n}\n\n::selection {\n  text-shadow: none;\n  background: rgba(0, 0, 0, 0.1);\n  color: rgba(255, 255, 255, 0.8);\n}\n\n:root {\n  font-family: 'Inter', sans-serif;\n}"
+	],
+	"names": [],
+	"mappings": "AAAA,UAAU,CACR,WAAW,CAAE,OAAO,CACpB,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,GAAG,CAChB,YAAY,CAAE,IAAI,CAClB,GAAG,CAAE,qCAAqC,CAAC,eAAe,CAC1D,oCAAoC,CAAC,cAAc,CAGrD,UAAU,CACR,WAAW,CAAE,OAAO,CACpB,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,GAAG,CAChB,YAAY,CAAE,IAAI,CAClB,GAAG,CAAE,uCAAuC,CAAC,eAAe,CAC5D,sCAAsC,CAAC,cAAc,CAGvD,UAAU,CACR,WAAW,CAAE,OAAO,CACpB,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,GAAG,CAChB,YAAY,CAAE,IAAI,CAClB,GAAG,CAAE,sCAAsC,CAAC,eAAe,CAC3D,qCAAqC,CAAC,cAAc,CAGtD,UAAU,CACR,WAAW,CAAE,OAAO,CACpB,UAAU,CAAG,MAAM,CACnB,WAAW,CAAE,GAAG,CAChB,YAAY,CAAE,IAAI,CAClB,GAAG,CAAE,wCAAwC,CAAC,eAAe,CAC7D,uCAAuC,CAAC,cAAc,CAGxD,UAAU,CACR,WAAW,CAAE,OAAO,CACpB,UAAU,CAAG,MAAM,CACnB,WAAW,CAAE,GAAG,CAChB,YAAY,CAAE,IAAI,CAClB,GAAG,CAAE,8CAA8C,CAAC,eAAe,CACnE,6CAA6C,CAAC,cAAc,GAG5D,AAAF,SAAW,AAAC,CACV,WAAW,CAAE,IAAI,CACjB,UAAU,CAAE,eAAkB,CAC9B,KAAK,CAAE,qBAAwB,CAChC,CAEA,AAAD,IAAK,AAAC,CACJ,WAAW,CAAE,mBAAmB,CACjC"
+}
