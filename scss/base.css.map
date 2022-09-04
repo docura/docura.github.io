@@ -3,17 +3,17 @@
 	"file": "base.css",
 	"sourceRoot": "/home/runner/work/site/site",
 	"sources": [
-		"assets/scss/base.scss",
-		"assets/scss/reset.scss",
-		"assets/scss/variables.scss",
-		"assets/scss/layout.scss",
-		"assets/scss/component/site-header.scss",
-		"assets/scss/component/site-footer.scss",
-		"assets/scss/component/article.scss",
-		"assets/scss/component/sidebar.scss",
-		"assets/scss/component/toc.scss",
-		"assets/scss/component/_button.scss",
-		"assets/scss/component/_dropdown.scss"
+		"themes/docura/assets/scss/base.scss",
+		"themes/docura/assets/scss/reset.scss",
+		"themes/docura/assets/scss/variables.scss",
+		"themes/docura/assets/scss/layout.scss",
+		"themes/docura/assets/scss/component/site-header.scss",
+		"themes/docura/assets/scss/component/site-footer.scss",
+		"themes/docura/assets/scss/component/article.scss",
+		"themes/docura/assets/scss/component/sidebar.scss",
+		"themes/docura/assets/scss/component/toc.scss",
+		"themes/docura/assets/scss/component/_button.scss",
+		"themes/docura/assets/scss/component/_dropdown.scss"
 	],
 	"sourcesContent": [
 		"/*!\n * Docura (https://docura.github.io/)\n * Copyright 2022 Dumindu Madunuwan\n * Licensed under the MIT License.\n */\n\n@import \"reset\";\n@import \"variables\";\n@import \"layout\";\n\n@import \"component/site-header\";\n@import \"component/site-footer\";\n@import \"component/article\";\n@import \"component/sidebar\";\n@import \"component/toc\";\n\n@import \"component/button\";\n@import \"component/dropdown\";\n\nbody{\n  font-family: var(--font-family);\n  background: var(--background);\n  color: var(--color);\n}",
