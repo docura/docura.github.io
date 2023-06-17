@@ -1,0 +1,89 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="A modular Hugo theme to build your next documentation site"><meta name=author content="Dumindu Madunuwan"><title>Configurations · Docura</title><link rel=canonical href=https://docura.github.io/docs/configurations/><link rel=stylesheet href=/scss/base.css integrity><link rel=stylesheet href=/scss/theme/default.css integrity><link rel=preconnect href=https://docura-dsn.algolia.net crossorigin><link rel=stylesheet href=/scss/component/docsearch.css integrity><link rel=manifest href=/manifest.json><link rel=icon href=/img/icon/favicon.ico><link rel=icon href=/img/icon/icon-16.png sizes=16x16 type=image/png><link rel=icon href=/img/icon/icon-32.png sizes=32x32 type=image/png><link rel=apple-touch-icon href=/img/icon/icon-180.png sizes=180x180><script async src="https://www.googletagmanager.com/gtag/js?id=G-JTX12SV6KT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-JTX12SV6KT")</script></head><body><header id=site-header><div id=site-header-brand><a href=/>Docura</a></div><div id=site-header-controls><div class=dropdown><button class=dropdown-btn aria-haspopup=menu aria-label="theme selector">
+<i class="icon icon-brightness"></i>
+<i class="icon icon-select"></i></button><ul role=menu class=dropdown-menu><li role=menuitem><button class=color-scheme data-value=light><i class="icon icon-light-mode"></i> Light</button></li><li role=menuitem><button class=color-scheme data-value=dark><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li><li role=menuitem><button class=color-scheme data-value=night><i class="icon icon-night-mode"></i> Night</button></li></ul></div><div class=dropdown><button class=dropdown-btn aria-haspopup=menu aria-label="language selector">
+<i class="icon icon-translate"></i>
+<i class="icon icon-select"></i></button><ul role=menu class=dropdown-menu><li role=menuitem><a href=#>English</a></li></ul></div></div><div id=site-header-menu><nav><ul><li><a href=/><i class='icon icon-home'></i>Home</a></li><li><a href=/docs/><i class='icon icon-book'></i>Documentation</a></li></ul></nav></div><div id=site-header-search></div></header><div id=site-main-content-wrapper><aside id=sidebar><span class=btn-close><i class="icon icon-close"></i></span><strong class=sidebar-section>📖 Documentation</strong>
+<a class=sidebar-link href=/docs/overview/>Overview</a>
+<a class=sidebar-link href=/docs/sample/>Sample</a>
+<strong class=sidebar-section>🌱 Getting Started</strong>
+<a class=sidebar-link href=/docs/installation/>Installation</a>
+<a class="sidebar-link current" href=/docs/configurations/>Configurations</a>
+<a class=sidebar-link href=/docs/first-documentation/>First Documentation</a>
+<strong class=sidebar-section>❤️ Made with Docura</strong>
+<a class=sidebar-link href=/docs/showcase/>Showcase</a></aside><main><article id=article><nav id=article-nav><button id=article-nav-menu-btn><i class="icon icon-menu"></i> On this section</button>
+<button id=article-nav-toc-btn><i class="icon icon-toc"></i> On this page</button></nav><header id=article-header><h1>Configurations</h1></header><div id=article-content><h2 id=-config>🛠️ config</h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>.
+</span></span><span class=line><span class=cl>└── config
+</span></span><span class=line><span class=cl>   └── _default
+</span></span><span class=line><span class=cl>      ├── config.toml
+</span></span><span class=line><span class=cl>      ├── languages.toml
+</span></span><span class=line><span class=cl>      ├── menu.toml
+</span></span><span class=line><span class=cl>      └── params.toml
+</span></span></code></pre></div><h3 id=configtoml><code>config.toml</code></h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-toml data-lang=toml><span class=line><span class=cl><span class=nx>title</span> <span class=p>=</span> <span class=s1>&#39;Your Site Name&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>baseURL</span> <span class=p>=</span> <span class=s1>&#39;https://your.site/&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>defaultContentLanguage</span> <span class=p>=</span> <span class=s1>&#39;en&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>languageCode</span> <span class=p>=</span> <span class=s1>&#39;en-us&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>googleAnalytics</span> <span class=p>=</span> <span class=s1>&#39;&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>enableGitInfo</span> <span class=p>=</span> <span class=kc>true</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>markup</span><span class=p>.</span><span class=nx>highlight</span><span class=p>.</span><span class=nx>noClasses</span> <span class=p>=</span> <span class=kc>false</span>
+</span></span></code></pre></div><h3 id=languagestoml><code>languages.toml</code></h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-toml data-lang=toml><span class=line><span class=cl><span class=p>[</span><span class=nx>en</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=nx>contentDir</span> <span class=p>=</span> <span class=s1>&#39;content/en&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>languageName</span> <span class=p>=</span> <span class=s1>&#39;English&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>weight</span> <span class=p>=</span> <span class=mi>1</span>
+</span></span></code></pre></div><h3 id=menutoml>menu.toml</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-toml data-lang=toml><span class=line><span class=cl><span class=p>[[</span><span class=nx>main</span><span class=p>]]</span>
+</span></span><span class=line><span class=cl><span class=nx>identifier</span> <span class=p>=</span> <span class=s1>&#39;home&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>name</span> <span class=p>=</span> <span class=s1>&#39;Home&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>pre</span> <span class=p>=</span> <span class=s2>&#34;&lt;i class=&#39;icon icon-home&#39;&gt;&lt;/i&gt;&#34;</span>
+</span></span><span class=line><span class=cl><span class=nx>url</span> <span class=p>=</span> <span class=s1>&#39;/&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>weight</span> <span class=p>=</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>[[</span><span class=nx>main</span><span class=p>]]</span>
+</span></span><span class=line><span class=cl><span class=nx>identifier</span> <span class=p>=</span> <span class=s1>&#39;docs&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>name</span> <span class=p>=</span> <span class=s1>&#39;Documentation&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>pre</span> <span class=p>=</span> <span class=s2>&#34;&lt;i class=&#39;icon icon-book&#39;&gt;&lt;/i&gt;&#34;</span>
+</span></span><span class=line><span class=cl><span class=nx>url</span> <span class=p>=</span> <span class=s1>&#39;/docs/&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>weight</span> <span class=p>=</span> <span class=mi>2</span>
+</span></span></code></pre></div><h3 id=paramstoml>params.toml</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-toml data-lang=toml><span class=line><span class=cl><span class=nx>description</span> <span class=p>=</span> <span class=s1>&#39;Your Site Description&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>author</span> <span class=p>=</span> <span class=s1>&#39;Your Name&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>authorURL</span> <span class=p>=</span> <span class=s1>&#39;https://your-site.com/&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>facebookURL</span> <span class=p>=</span> <span class=s1>&#39;https://facebook.com/&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>twitterURL</span> <span class=p>=</span> <span class=s1>&#39;https://www.twitter.com/&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>githubURL</span> <span class=p>=</span> <span class=s1>&#39;https://github.com/&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>youtubeURL</span> <span class=p>=</span> <span class=s1>&#39;https://www.youtube.com/&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>githubRepo</span> <span class=p>=</span> <span class=s1>&#39;your/repo&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>githubSponsorURL</span> <span class=p>=</span> <span class=s1>&#39;https://github.com/sponsors/&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>buyMeACoffeeURL</span> <span class=p>=</span> <span class=s1>&#39;https://www.buymeacoffee.com/&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>[</span><span class=nx>algolia</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=p>[</span><span class=nx>algolia</span><span class=p>.</span><span class=nx>en</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=nx>container</span> <span class=p>=</span> <span class=s1>&#39;#site-header-search&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>appId</span> <span class=p>=</span> <span class=s1>&#39;&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>indexName</span> <span class=p>=</span> <span class=s1>&#39;&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>apiKey</span> <span class=p>=</span> <span class=s1>&#39;&#39;</span>
+</span></span></code></pre></div><blockquote><p>💡 <code>githubURL</code> is used in footer links while <code>githubRepo</code> is used in home page.</p><p>use <code>githubRepos</code> to add multiple GitHub repos/ star & fork buttons for multiple repos to home page (<a href=https://learning-cloud-native-go.github.io target=_blank>example</a>)</p></blockquote><div class=highlight><pre tabindex=0 class=chroma><code class=language-toml data-lang=toml><span class=line><span class=cl><span class=p>[[</span><span class=nx>githubRepos</span><span class=p>]]</span>
+</span></span><span class=line><span class=cl><span class=nx>name</span> <span class=p>=</span> <span class=s1>&#39;Project 01&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>repo</span> <span class=p>=</span> <span class=s1>&#39;org/repo&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>icon</span> <span class=p>=</span> <span class=s2>&#34;&lt;i class=&#39;icon icon-book&#39;&gt;&lt;/i&gt;&#34;</span>
+</span></span><span class=line><span class=cl><span class=nx>description</span> <span class=p>=</span> <span class=s1>&#39;The repository of the project 01.&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>[[</span><span class=nx>githubRepos</span><span class=p>]]</span>
+</span></span><span class=line><span class=cl><span class=nx>name</span> <span class=p>=</span> <span class=s1>&#39;Project 02&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>repo</span> <span class=p>=</span> <span class=s1>&#39;org/repo&#39;</span>
+</span></span><span class=line><span class=cl><span class=nx>icon</span> <span class=p>=</span> <span class=s2>&#34;&lt;i class=&#39;icon icon-theme&#39;&gt;&lt;/i&gt;&#34;</span>
+</span></span><span class=line><span class=cl><span class=nx>description</span> <span class=p>=</span> <span class=s1>&#39;The repository of the project 02.&#39;</span>
+</span></span></code></pre></div></div><footer id=article-footer><time id=article-last-updated datetime=2023-06-17><i class="icon icon-calendar"></i>&nbsp;Last updated: 2023-06-17</time>
+<a id=article-prev-link href=/docs/installation/><i class="icon icon-prev icon-colored"></i> Prev</a>
+<a id=article-next-link href=/docs/first-documentation/>Next <i class="icon icon-next icon-colored"></i></a></footer></article><aside id=toc><span class=btn-close><i class="icon icon-close"></i></span><div class=sticky><strong>On this page</strong><nav id=TableOfContents><ul><li><a href=#-config>🛠️ config</a><ul><li><a href=#configtoml><code>config.toml</code></a></li><li><a href=#languagestoml><code>languages.toml</code></a></li><li><a href=#menutoml>menu.toml</a></li><li><a href=#paramstoml>params.toml</a></li></ul></li></ul></nav></div></aside></main></div><footer id=site-footer><div id=site-footer-copyright><a href=https://github.com/dumindu target=_blank><i class="icon icon-copyright"></i> 2022 Dumindu Madunuwan</a></div><div id=site-footer-social><a href=https://facebook.com/ target=_blank aria-label="facebook url"><i class="icon icon-facebook icon-colored"></i></a>
+<a href=https://www.twitter.com/ target=_blank aria-label="twitter url"><i class="icon icon-twitter icon-colored"></i></a>
+<a href=https://github.com/docura/ target=_blank aria-label="github url"><i class="icon icon-github icon-colored"></i></a>
+<a href=https://www.youtube.com/ target=_blank aria-label="youtube url"><i class="icon icon-youtube icon-colored"></i></a></div><div id=site-footer-fund><a href=https://github.com/sponsors/dumindu class=btn-github target=_blank aria-label="github sponsor url"><i class="icon icon-github icon-colored"></i> Sponsor</a>
+<a href=https://www.buymeacoffee.com/dumindu class=btn-buymeacoffee target=_blank aria-label="buy me a coffee url"></a></div><div id=site-footer-love>Made with <i class="icon icon-love icon-colored"></i> &nbsp;from&nbsp;<a href=https://docura.github.io/ target=_blank>Docura</a></div></footer><script type=text/javascript src=/js/base.min.js></script>
+<script src=/js/component/docsearch.min.js></script>
+<script type=application/javascript>docsearch({container:"#site-header-search",appId:"docura",indexName:"docura",apiKey:""})</script></body></html>
